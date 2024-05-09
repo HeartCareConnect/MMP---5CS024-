@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Font Awesome 6 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Home</title>
+</head>
+<body>
+
+    <header>
+    <div class="grid-container">
+        <div class="grid-child logo">
+            <a href="index.html"><img src="images/lmp.png" alt="Logo" width="302px" height="77px"></a>
+        </div>
+
+        <div class="grid-child icon">
+        <div id="info-btn" class="icons fas fa-user">
+            <ul>
+                <li><a href="signup.php" id="user-link">User</a></li>
+                <li><a href="Cindex.html" id="carer-link">Carer</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>  
+       
+      
+        <nav class="navbar">
+          
+        </nav>
+    </header>
+
+
+    <div class="background-image">
+        <div class="background-image-overlay" ></div>
+        <div class="background-content">
+            <h1>Compassionate Support <br>at Your Fingertips</h1>
+            <p>Remote monitoring, scheduling, <br>and heartfelt support for professionals. </p>
+            <div class="register">
+            <!-- <div ><p>Check your heart health now</p></div> -->
+            <a href="signup.php" class="signup">Signup</a>
+            <div class="">
+                <p><br>Already a member? <a href ="signin.php" style="text-decoration: none; color:#0059b3">Login</a></p>
+            </div>
+        </div>
+    
+
+        </div>
+
+        
+    </div>
+
+    <div class="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h1>About us</h1>
+                <p>
+                    "Welcome to our innovative healthcare platform tailored for professional caregivers. 
+                    Our focus is on assisting professional caregivers in remotely monitoring the heart rate signals of the elderly individuals under their care. 
+                    We aim to empower professional caregivers in providing comprehensive and compassionate care for the elderly.
+                    Your caregiving tasks are made more accessible, connected, and emotionally supportive with just a few clicks."</p>
+                <a href="#">Read more</a> <!-- need to create another read more html page for this-->
+                </div>
+                
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="images/about1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!--<section class="register">
+        <div class="join">
+        <p>Join us to get started</p>
+        <div class="btn-1">
+            <a href ="#"><button>Register</button></a>
+        </div>
+        <div>
+            <p>Already a member? <a href ="#" style="text-decoration: none; color:black">Login</a></p>
+        </div>
+
+    </div>
+
+</section>-->
+
+
+<footer class="footer">
+    <div>
+        
+        
+
+            <div class="footer-section-copyright">
+                <p>&copy; 2024 HCC.Ltd All rights reserved.</p>
+            </div>
+        
+    </div>
+    
+    
+</footer>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var icon = document.getElementById("info-btn");
+        var userLink = document.getElementById("user-link");
+        var adminLink = document.getElementById("carer-link");
+
+        icon.addEventListener("click", function() {
+            icon.classList.toggle("show");
+            userLink.classList.toggle("show");
+            adminLink.classList.toggle("show");
+        });
+    });
+    </script>
+    
+</body>
+</html>
